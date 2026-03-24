@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CBK - Confederação Brasileira de Karate - Portal oficial com notícias, resultados e informações sobre competições.">
+    <title>CBK - Confederação Brasileira de Karate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/logo.png">
+</head>
+<body>
+    <!-- HEADER E NAVEGAÇÃO -->
+    <header class="header">
+        <div class="topbar">
+            <div class="container header-top">
+                <div class="logo-area">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="Logo CBK">
+                    </div>
+                    <div class="headerright">
+                        <h1>CBK</h1>
+                    </div>
+                </div>
+
+                <button class="menu-toggle" id="menuToggle">☰</button>
+
+                <nav class="navbar" id="navbar">
+                    <ul class="nav-menu">
+                        <li><a href="#inicial" class="nav-link active">Inicial</a></li>
+                        <li><a href="#confederacao" class="nav-link">Confederação</a></li>
+                        <li><a href="#resultados" class="nav-link">Resultados</a></li>
+                        <li><a href="#tecnica" class="nav-link">Área Técnica</a></li>
+                        <li><a href="#esporte-seguro" class="nav-link">Esporte Seguro</a></li>
+                        <li><a href="#transparencia" class="nav-link">Transparência</a></li>
+                        <li><a href="#ouvidoria" class="nav-link">Ouvidoria</a></li>
+                        <li><a href="#contato" class="nav-link">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+        <!-- BANNER + HERO -->
+        <div class="banner">
+            <img src="img/bnnaer.png" alt="Banner CBK" class="banner-image">
+            <div class="hero-content">
+                <h2>Bem-vindo à CBK</h2>
+                <p>A Confederação Brasileira de Karate - Portal oficial com notícias, resultados e informações sobre competições nacionais e internacionais</p>
+                <a href="#noticias" class="btn btn-primary">Últimas Notícias</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- SEÇÃO DE DESTAQUES/WIDGETS -->
+    <section class="highlights">
+        <div class="container">
+            <div class="highlights-grid">
+                <div class="highlight-card">
+                    <div class="icon">📅</div>
+                    <h3>Calendário 2026</h3>
+                    <p>Confira todos os eventos e competições agendados</p>
+                    <a href="#" class="link-btn">Ver Calendário →</a>
+                </div>
+                <div class="highlight-card">
+                    <div class="icon">🏆</div>
+                    <h3>Resultados</h3>
+                    <p>Acompanhe os resultados dos campeonatos</p>
+                    <a href="#resultados" class="link-btn">Ver Resultados →</a>
+                </div>
+                <div class="highlight-card">
+                    <div class="icon">📊</div>
+                    <h3>Rankings</h3>
+                    <p>Ranking Brasileiro 2025 atualizado</p>
+                    <a href="#" class="link-btn">Ver Rankings →</a>
+                </div>
+                <div class="highlight-card">
+                    <div class="icon">🥋</div>
+                    <h3>Faixas Pretas</h3>
+                    <p>Informações sobre exames e faixas pretas</p>
+                    <a href="#" class="link-btn">Saiba Mais →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO DE NOTÍCIAS PRINCIPAIS -->
+    <section class="noticias" id="noticias">
+        <div class="container">
+            <h2 class="section-title">Últimas Notícias</h2>
+            <div class="noticias-grid">
+                <article class="noticia-card noticia-grande">
+                    <div class="noticia-image">
+                        <img src="img/c1.jpg" alt="Notícia principal">
+                    </div>
+                    <div class="noticia-content">
+                        <h3>Campeonato Brasileiro 2025 - Etapa Paraná</h3>
+                        <p class="noticia-data">📅 Atualizado em 23/07/2024 às 12h</p>
+                        <p>Confira todas as informações sobre a etapa do Paraná, incluindo chaves, resultados e certificados.</p>
+                        <a href="#" class="btn btn-secondary">Mais Informações</a>
+                    </div>
+                </article>
+
+                <div class="noticias-sidebar">
+                    <article class="noticia-card noticia-pequena">
+                        <div class="noticia-image">
+                            <img src="img/c2.jpg" alt="Notícia">
+                        </div>
+                        <h4>Seletiva Nacional 3</h4>
+                        <p class="noticia-data">22/07/2024</p>
+                    </article>
+
+                    <article class="noticia-card noticia-pequena">
+                        <div class="noticia-image">
+                            <img src="img/c3.jpg" alt="Notícia">
+                        </div>
+                        <h4>Campeonato Brasileiro - Etapa MG</h4>
+                        <p class="noticia-data">13/08/2025</p>
+                    </article>
+
+                    <article class="noticia-card noticia-pequena">
+                        <div class="noticia-image">
+                            <img src="img/c4.jpg" alt="Notícia">
+                        </div>
+                        <h4>Técnicos Credenciados 2025</h4>
+                        <p class="noticia-data">16/11/2025</p>
+                    </article>
+                </div>
+            </div>
+
+            <!-- SEÇÃO DE CALENDÁRIO -->
+            <h2 class="section-title">Calendário 2026</h2>
+            <div class="calendario-grid">
+                <div class="calendario-item">
+                    <img src="img/c5.jpg" alt="Evento">
+                    <h4>Ranking Brasileiro Sênior 2025</h4>
+                </div>
+                <div class="calendario-item">
+                    <img src="img/c6.jpg" alt="Evento">
+                    <h4>Campeonato Brasileiro de Base</h4>
+                </div>
+                <div class="calendario-item">
+                    <img src="img/c7.jpg" alt="Evento">
+                    <h4>Seleção Brasileira 2026</h4>
+                </div>
+                <div class="calendario-item">
+                    <img src="img/c8.jpg" alt="Evento">
+                    <h4>Regulamentos 2026</h4>
+                </div>
+                <div class="calendario-item">
+                    <img src="img/c9.jpg" alt="Evento">
+                    <h4>Jogos Sul-Americanos</h4>
+                </div>
+                <div class="calendario-item">
+                    <img src="img/c10.jpg" alt="Evento">
+                    <h4>Campeonato Paulista</h4>
+                </div>
+            </div>
+
+            <div class="noticias-footer">
+                <a href="#" class="btn btn-primary">Ver Todas as Notícias →</a>
+            </div>
+        </section>
+
+    <!-- SEÇÕES INFORMATIVAS -->
+    <section class="info-sections">
+        <div class="container">
+            <!-- CONFEDERAÇÃO -->
+            <section class="info-section" id="confederacao">
+                <h2>Sobre a Confederação</h2>
+                <div class="info-content">
+                    <div class="info-text">
+                        <h3>CBK - Confederação Brasileira de Karate</h3>
+                        <p>A Confederação Brasileira de Karate é a entidade máxima que regulamenta, administra e desenvolve o Karate em todo o território nacional, representando o Brasil em competições internacionais.</p>
+                        <p>Nossa missão é promover o desenvolvimento do Karate, garantindo a qualidade técnica, integridade e transparência em todas as nossas ações.</p>
+                        <ul class="info-list">
+                            <li>✓ Organização de competições nacionais</li>
+                            <li>✓ Representação em competições internacionais</li>
+                            <li>✓ Desenvolvimento de talentos karatecas</li>
+                            <li>✓ Formação de árbitros e técnicos credenciados</li>
+                        </ul>
+                    </div>
+                    <div class="info-image">
+                        <img src="img/cartaz1.jpg" alt="CBK">
+                    </div>
+                </div>
+            </section>
+
+            <!-- RESULTADOS -->
+            <section class="info-section" id="resultados">
+                <h2>Resultados</h2>
+                <div class="info-content">
+                    <p>Acompanhe em tempo real os resultados dos principais campeonatos de Karate do Brasil.</p>
+                    <div class="resultados-list">
+                        <div class="resultado-item">
+                            <h4>Campeonato Brasileiro 2025 - Etapa Final (Sub-8 ao Júnior)</h4>
+                            <a href="#" class="download-btn">📄 Resultado</a>
+                            <a href="#" class="download-btn">🏆 Certificados</a>
+                            <a href="#" class="download-btn">📋 Chaves</a>
+                        </div>
+                        <div class="resultado-item">
+                            <h4>Campeonato Brasileiro 2025 - Etapa Final (Sub-21 e Sênior)</h4>
+                            <a href="#" class="download-btn">📄 Resultado</a>
+                            <a href="#" class="download-btn">🏆 Certificados</a>
+                            <a href="#" class="download-btn">📋 Chaves</a>
+                        </div>
+                        <div class="resultado-item">
+                            <h4>Ranking Brasileiro Sênior 2025</h4>
+                            <a href="#" class="download-btn">📄 Ranking</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ÁREA TÉCNICA -->
+            <section class="info-section" id="tecnica">
+                <h2>Área Técnica / Arbitragem</h2>
+                <div class="info-content">
+                    <p>Informações sobre regulamentos, arbitragem, técnicos credenciados e faixas pretas.</p>
+                    <div class="tecnica-grid">
+                        <div class="tecnica-card">
+                            <h4>Faixas Pretas</h4>
+                            <p>Relação de faixas pretas regulares e histórico</p>
+                        </div>
+                        <div class="tecnica-card">
+                            <h4>Exames de Faixa Preta</h4>
+                            <p>Informações e agendamento de exames</p>
+                        </div>
+                        <div class="tecnica-card">
+                            <h4>Técnicos Credenciados</h4>
+                            <p>Lista de técnicos oficialmente credenciados</p>
+                        </div>
+                        <div class="tecnica-card">
+                            <h4>Regulamentos</h4>
+                            <p>Regulamentos de competições 2025 e 2026</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ESPORTE SEGURO -->
+            <section class="info-section" id="esporte-seguro">
+                <h2>Esporte Seguro</h2>
+                <div class="info-content">
+                    <p>O programa Esporte Seguro visa garantir a segurança, integridade e bem-estar de todos os envolvidos no Karate brasileiro.</p>
+                    <div class="estoque-seguro-box">
+                        <h4>Acesse a plataforma Esporte Seguro</h4>
+                        <p>Denúncias, informações e orientações sobre segurança no esporte.</p>
+                        <a href="https://esporteseguro.esp.br/karate-cbk/" class="btn btn-primary" target="_blank">Ir para Esporte Seguro</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TRANSPARÊNCIA -->
+            <section class="info-section" id="transparencia">
+                <h2>Transparência</h2>
+                <div class="info-content">
+                    <p>A CBK compromete-se com a transparência em todas as suas operações e decisões.</p>
+                    <div class="transparencia-grid">
+                        <div class="transparencia-item">
+                            <h4>Documentos Oficiais</h4>
+                            <p>Resoluções, editais e comunicados oficiais</p>
+                        </div>
+                        <div class="transparencia-item">
+                            <h4>Prestação de Contas</h4>
+                            <p>Relatórios financeiros e de gestão</p>
+                        </div>
+                        <div class="transparencia-item">
+                            <h4>Assembléias</h4>
+                            <p>Atas e informações sobre assembléias gerais</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- OUVIDORIA -->
+            <section class="info-section" id="ouvidoria">
+                <h2>Ouvidoria</h2>
+                <div class="info-content">
+                    <p>Sugestões, críticas e reclamações podem ser enviadas através da nossa ouvidoria.</p>
+                    <div class="ouvidoria-box">
+                        <h4>Enviar Mensagem</h4>
+                        <p>Sua opinião é importante para nós!</p>
+                        <a href="#" class="btn btn-primary">Acessar Ouvidoria</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section class="contato" id="contato">
+        <div class="container">
+            <h2>Contato</h2>
+            <div class="contato-grid">
+                <div class="contato-info">
+                    <h3>Informações de Contato</h3>
+                    <div class="contato-item">
+                        <strong>Email:</strong>
+                        <p><a href="mailto:contato@karatedobrasil.com">contato@karatedobrasil.com</a></p>
+                    </div>
+                    <div class="contato-item">
+                        <strong>Redes Sociais:</strong>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/karatedobrasiloficial" target="_blank" class="social-icon">Facebook</a>
+                            <a href="https://www.instagram.com/karate_do_brasil/" target="_blank" class="social-icon">Instagram</a>
+                            <a href="https://www.youtube.com/channel/UCs1tXMcrtIn5oXADDhjinRQ" target="_blank" class="social-icon">YouTube</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contato-form">
+                    <h3>Envie uma Mensagem</h3>
+                    <div class="form-group">
+                        <input type="text" placeholder="Seu Nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Seu Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Assunto" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>CBK</h4>
+                    <p>Confederação Brasileira de Karate - Portal oficial</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#confederacao">Confederação</a></li>
+                        <li><a href="#resultados">Resultados</a></li>
+                        <li><a href="#tecnica">Área Técnica</a></li>
+                        <li><a href="#transparencia">Transparência</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <div class="footer-social">
+                        <a href="https://www.facebook.com/karatedobrasiloficial" target="_blank">📘 Facebook</a>
+                        <a href="https://www.instagram.com/karate_do_brasil/" target="_blank">📷 Instagram</a>
+                        <a href="https://www.youtube.com/channel/UCs1tXMcrtIn5oXADDhjinRQ" target="_blank">📺 YouTube</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Confederação Brasileira de Karate. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
