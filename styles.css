@@ -1,6 +1,4 @@
-/* ========================================
-   RESET E VARIÁVEIS GLOBAIS
-   ======================================== */
+
 
 * {
     margin: 0;
@@ -46,9 +44,7 @@ body {
     padding: 0 20px;
 }
 
-/* ========================================
-   HEADER E NAVEGAÇÃO
-   ======================================== */
+
 
 .topbar {
     position: sticky;
@@ -231,44 +227,7 @@ body {
     background: rgba(255, 255, 255, 0.3);
 }
 
-/* Navegação */
-.navbar {
-    width: 100%;
-}
 
-
-
-/* ========================================
-   HERO SECTION
-   ======================================== */
-
-.hero {
-    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
-    color: var(--white);
-    padding: 80px 20px;
-    text-align: center;
-}
-
-.hero-content h2 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 48px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    margin-bottom: 20px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-}
-
-.hero-content p {
-    font-size: 18px;
-    max-width: 600px;
-    margin: 0 auto 30px;
-    opacity: 0.95;
-}
-
-/* ========================================
-   BOTÕES
-   ======================================== */
 
 .btn {
     display: inline-block;
@@ -315,56 +274,7 @@ body {
     transform: translateX(5px);
 }
 
-/* ========================================
-   SEÇÃO DE DESTAQUES
-   ======================================== */
 
-.highlights {
-    background: var(--gray-50);
-    padding: 60px 20px;
-}
-
-.highlights-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-}
-
-.highlight-card {
-    background: var(--white);
-    padding: 30px;
-    border-radius: var(--border-radius);
-    text-align: center;
-    box-shadow: var(--box-shadow);
-    transition: var(--transition);
-    border-top: 4px solid var(--primary-green);
-}
-
-.highlight-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
-}
-
-.highlight-card .icon {
-    font-size: 40px;
-    margin-bottom: 15px;
-}
-
-.highlight-card h3 {
-    color: var(--primary-green);
-    margin-bottom: 10px;
-    font-size: 18px;
-}
-
-.highlight-card p {
-    color: var(--gray-600);
-    font-size: 14px;
-    margin-bottom: 15px;
-}
-
-/* ========================================
-   SEÇÃO DE NOTÍCIAS
-   ======================================== */
 
 .noticias {
     padding: 60px 20px;
@@ -451,7 +361,7 @@ body {
     margin-bottom: 15px;
 }
 
-/* Sidebar de notícias pequenas */
+
 .noticias-sidebar {
     display: flex;
     flex-direction: column;
@@ -482,50 +392,13 @@ body {
     letter-spacing: 1px;
 }
 
-/* Grid de notícias em miniatura */
-.noticias-grid-2 {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 20px;
-    margin: 40px 0;
-}
 
-.noticia-mini {
-    border-radius: var(--border-radius);
-    overflow: hidden;
-    box-shadow: var(--box-shadow);
-    transition: var(--transition);
-    cursor: pointer;
-}
-
-.noticia-mini:hover {
-    transform: scale(1.05);
-}
-
-.noticia-mini img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-}
-
-.noticia-mini h4 {
-    padding: 12px;
-    background: var(--white);
-    color: var(--primary-green);
-    font-size: 13px;
-    font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
 
 .noticias-footer {
     text-align: center;
 }
 
-/* ========================================
-   SEÇÃO DE CALENDÁRIO
-   ======================================== */
+
 
 .calendario-grid {
     display: grid;
@@ -565,9 +438,7 @@ body {
     margin: 0;
 }
 
-/* ========================================
-   SEÇÕES INFORMATIVAS
-   ======================================== */
+
 
 .info-sections {
     background: var(--gray-50);
@@ -629,7 +500,7 @@ body {
     box-shadow: var(--box-shadow);
 }
 
-/* Resultados */
+
 .resultados-list {
     display: flex;
     flex-direction: column;
@@ -670,7 +541,7 @@ body {
     background: var(--primary-blue);
 }
 
-/* Área Técnica */
+
 .tecnica-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -699,7 +570,7 @@ body {
     font-size: 14px;
 }
 
-/* Esporte Seguro */
+
 .estoque-seguro-box {
     background: linear-gradient(135deg, var(--primary-yellow) 0%, #fbbf24 100%);
     padding: 30px;
@@ -708,22 +579,14 @@ body {
     margin-top: 20px;
 }
 
-.ouvidoria-box h4 {
-    font-family: 'Montserrat', sans-serif;
-    color: var(--primary-blue);
-    font-size: 20px;
-    margin-bottom: 10px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-}
+
 
 .estoque-seguro-box p {
     color: var(--text-dark);
     margin-bottom: 20px;
 }
 
-/* Transparência */
+
 .transparencia-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -752,7 +615,7 @@ body {
     font-size: 14px;
 }
 
-/* Ouvidoria */
+
 .ouvidoria-box {
     background: linear-gradient(135deg, var(--light-blue) 0%, var(--light-green) 100%);
     padding: 30px;
@@ -772,9 +635,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* ========================================
-   SEÇÃO DE CONTATO
-   ======================================== */
+
 
 .contato {
     background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 100%);
@@ -848,7 +709,7 @@ body {
     background: rgba(255, 255, 255, 0.2);
 }
 
-/* Formulário */
+
 .form-group {
     margin-bottom: 15px;
 }
@@ -878,9 +739,7 @@ body {
     border-color: var(--primary-yellow);
 }
 
-/* ========================================
-   FOOTER
-   ======================================== */
+
 
 .footer {
     background: var(--text-dark);
@@ -944,9 +803,7 @@ body {
     font-size: 13px;
 }
 
-/* ========================================
-   RESPONSIVIDADE
-   ======================================== */
+
 
 @media (max-width: 768px) {
     .banner {
@@ -985,11 +842,11 @@ body {
         font-size: 20px;
     }
 
-    .hero-content h2 {
+    .banner .hero-content h2 {
         font-size: 32px;
     }
 
-    .hero-content p {
+    .banner .hero-content p {
         font-size: 16px;
     }
 
@@ -1016,9 +873,7 @@ body {
         height: 150px;
     }
 
-    .noticias-grid-2 {
-        grid-template-columns: repeat(2, 1fr);
-    }
+
 
     .info-content {
         grid-template-columns: 1fr;
@@ -1040,12 +895,7 @@ body {
     .info-section {
         padding: 25px;
     }
-
-    .highlights-grid {
-        grid-template-columns: 1fr;
-    }
 }
-
 @media (max-width: 480px) {
     .banner {
         height: 300px;
@@ -1067,17 +917,6 @@ body {
         font-size: 12px;
     }
 
-    .hero {
-        padding: 50px 20px;
-    }
-
-    .hero-content h2 {
-        font-size: 24px;
-    }
-
-    .hero-content p {
-        font-size: 14px;
-    }
 
     .btn {
         padding: 10px 20px;
@@ -1105,10 +944,7 @@ body {
         gap: 20px;
     }
 
-    .highlights {
-        padding: 40px 20px;
-    }
-
+    
     .noticias {
         padding: 40px 20px;
     }
@@ -1122,9 +958,7 @@ body {
     }
 }
 
-/* ========================================
-   ANIMAÇÕES
-   ======================================== */
+
 
 @keyframes slideDown {
     from {
