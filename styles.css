@@ -798,6 +798,115 @@ body {
     font-size: 14px;
 }
 
+/* --- Balão de notícia (tooltip/dialog) --- */
+.noticia-card[role="button"] {
+    cursor: pointer;
+}
+.noticia-card[role="button"]:focus {
+    outline: 3px solid rgba(252, 211, 77, 0.15);
+    outline-offset: 3px;
+}
+.noticia-details {
+    display: none; /* conteúdo utilizado pelo JS para preencher o balão */
+}
+
+.news-balloon {
+    position: absolute;
+    z-index: 3000;
+    max-width: 420px;
+    width: 90%;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(14, 30, 37, 0.12);
+    padding: 16px;
+    transition: opacity 0.18s ease, transform 0.18s ease;
+    opacity: 0;
+    transform: translateY(6px);
+    pointer-events: none;
+    border: 1px solid rgba(0,0,0,0.06);
+}
+
+.news-balloon.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.news-balloon::after,
+.news-balloon.below::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    width: 14px;
+    height: 14px;
+    background: var(--white);
+    border-left: 1px solid rgba(0,0,0,0.06);
+    border-top: 1px solid rgba(0,0,0,0.06);
+    box-shadow: 0 6px 14px rgba(14, 30, 37, 0.08);
+}
+
+.news-balloon::after {
+    bottom: -7px;
+}
+
+.news-balloon.below::after {
+    top: -7px;
+    bottom: auto;
+}
+
+.news-balloon .news-balloon-body img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 8px 0;
+    display: block;
+}
+
+.news-balloon .close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+    color: var(--gray-700);
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.news-balloon .close-btn:focus {
+    outline: 3px solid var(--primary-yellow);
+    outline-offset: 2px;
+}
+
+.news-balloon .news-balloon-body h3 {
+    margin: 0 0 8px;
+    font-size: 18px;
+    color: var(--primary-green);
+}
+
+.news-balloon .news-balloon-body .noticia-data {
+    margin-bottom: 8px;
+    color: var(--gray-600);
+    font-size: 13px;
+}
+
+.news-balloon .news-balloon-body p {
+    color: var(--gray-700);
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+@media (min-width: 700px) {
+    .news-balloon {
+        width: auto;
+        max-width: 420px;
+    }
+}
+
 .social-icon:hover {
     background: rgba(255, 255, 255, 0.2);
 }

@@ -56,7 +56,7 @@
         <div class="container">
             <h2 class="section-title">Últimas Notícias</h2>
             <div class="noticias-grid">
-                <article class="noticia-card noticia-grande">
+                <article class="noticia-card noticia-grande" tabindex="0" role="button" aria-haspopup="dialog" data-id="news-1">
                     <div class="noticia-image">
                         <img src="img/c1.jpg" alt="Notícia principal">
                     </div>
@@ -66,31 +66,59 @@
                         <p>Confira todas as informações sobre a etapa do Paraná, incluindo chaves, resultados e certificados.</p>
                         <a href="#" class="btn btn-secondary">Mais Informações</a>
                     </div>
+                    <div class="noticia-details" hidden>
+                        <h3>Campeonato Brasileiro 2025 - Etapa Paraná</h3>
+                        <p class="noticia-data">Atualizado em 23/07/2024 às 12h</p>
+                        <img src="img/c1.jpg" alt="Campeonato Brasileiro 2025 - Etapa Paraná">
+                        <p>Confira todas as informações sobre a etapa do Paraná, incluindo chaves, resultados e certificados.</p>
+                        <a href="#" class="btn btn-secondary">Mais Informações</a>
+                    </div>
                 </article>
 
                 <div class="noticias-sidebar">
-                    <article class="noticia-card noticia-pequena">
+                    <article class="noticia-card noticia-pequena" tabindex="0" role="button" aria-haspopup="dialog" data-id="news-2">
                         <div class="noticia-image">
                             <img src="img/c2.jpg" alt="Notícia">
                         </div>
                         <h4>Seletiva Nacional 3</h4>
                         <p class="noticia-data">22/07/2024</p>
+                        <div class="noticia-details" hidden>
+                            <h3>Seletiva Nacional 3</h3>
+                            <p class="noticia-data">22/07/2024</p>
+                            <img src="img/c2.jpg" alt="Seletiva Nacional 3">
+                            <p>Resumo da Seletiva Nacional 3 com informações sobre local, categorias e inscrições.</p>
+                            <a href="#" class="btn btn-secondary">Mais Informações</a>
+                        </div>
                     </article>
 
-                    <article class="noticia-card noticia-pequena">
+                    <article class="noticia-card noticia-pequena" tabindex="0" role="button" aria-haspopup="dialog" data-id="news-3">
                         <div class="noticia-image">
                             <img src="img/c3.jpg" alt="Notícia">
                         </div>
                         <h4>Campeonato Brasileiro - Etapa MG</h4>
                         <p class="noticia-data">13/08/2025</p>
+                        <div class="noticia-details" hidden>
+                            <h3>Campeonato Brasileiro - Etapa MG</h3>
+                            <p class="noticia-data">13/08/2025</p>
+                            <img src="img/c3.jpg" alt="Campeonato Brasileiro - Etapa MG">
+                            <p>Informações sobre a etapa em Minas Gerais, incluindo chaves e resultados prévios.</p>
+                            <a href="#" class="btn btn-secondary">Mais Informações</a>
+                        </div>
                     </article>
 
-                    <article class="noticia-card noticia-pequena">
+                    <article class="noticia-card noticia-pequena" tabindex="0" role="button" aria-haspopup="dialog" data-id="news-4">
                         <div class="noticia-image">
                             <img src="img/c4.jpg" alt="Notícia">
                         </div>
                         <h4>Técnicos Credenciados 2025</h4>
                         <p class="noticia-data">16/11/2025</p>
+                        <div class="noticia-details" hidden>
+                            <h3>Técnicos Credenciados 2025</h3>
+                            <p class="noticia-data">16/11/2025</p>
+                            <img src="img/c4.jpg" alt="Técnicos Credenciados 2025">
+                            <p>Lista de técnicos credenciados para 2025 e informações sobre reciclagem e cursos.</p>
+                            <a href="#" class="btn btn-secondary">Mais Informações</a>
+                        </div>
                     </article>
                 </div>
             </div>
@@ -345,6 +373,7 @@
         </div>
     </footer>
 
+    <div id="newsBalloon" class="news-balloon" role="dialog" aria-hidden="true"></div>
     <script src="script.js"></script>
 </body>
 </html>
